@@ -1,0 +1,117 @@
+/* General Styles */
+body {
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #000000 !important; /* Black background */
+    color: #ffffff !important; /* White text */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the page takes at least the full height of the viewport */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px; /* Added padding */
+}
+
+/* Header Styles */
+header {
+    background-color: #000000; /* Black header */
+    color: #ffffff; /* Header text color */
+    text-align: center;
+    padding: 0.5em 0; /* Adjusted padding */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    background-color: #000000; /* Black navigation bar */
+}
+
+nav ul li {
+    margin: 0;
+    padding: 0.5em 1em;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    color: #ffffff; /* Change the color on hover or focus */
+}
+
+/* Main Content Styles */
+main {
+    flex: 1; /* Make the main content expand to fill available space */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Introduction Section Styles */
+section.intro,
+section {
+    background-color: #000000; /* Black section */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 1em;
+    margin: 1em 0; /* Adjusted margins */
+    border: 1px solid #ffffff; /* White border */
+}
+
+section.intro h2,
+section h2 {
+    color: #ffffff; /* Header text color */
+    border-bottom: 2px solid #ffffff; /* White border under heading */
+    padding-bottom: 0.5em; /* Space between heading and text */
+    margin-bottom: 0.3em; /* Adjusted margin for the heading */
+}
+
+section.intro p,
+section p {
+    color: #ffffff; /* White text */
+    word-wrap: break-word; /* Allow words to break and wrap onto the next line */
+    margin-bottom: 0.3em; /* Adjusted margin for paragraphs */
+}
+
+/* Skills Section Styles */
+section ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section li {
+    flex: 0 0 48%; /* 48% width with a little space between items */
+    margin-right: 2%; /* Adjusted space between items */
+    margin-bottom: 0.3em; /* Added margin to the bottom for consistency */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #000000; /* Black footer */
+    color: #ffffff;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+    position: relative; /* Added position property */
+}
+
+.flag-icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #ffffff; /* White flag color */
+    font-size: 24px; /* Adjust the font size as needed */
+}

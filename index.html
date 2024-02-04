@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Ilyas - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-9JqyebP/T6Ftik2VV67ecxEqSAd6U2Ku5GXr+g8XnwGuc6WK4bCCy/CZUn8ZN+ZWE5eEhs6Y5R8cO5K8NUuwHg==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<!-- Last Updated Marker -->
+<div id="last-updated">
+    Last Updated: <span id="last-updated-time"></span>
+</div>
+
+<!-- Navigation -->
+<header>
+    <div class="container">
+        <h1>David Ilyas</h1>
+        <p>Senior Systems Engineer | Data Center Supervisor</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Main Content -->
+<main class="container">
+
+    <!-- Introduction Section -->
+    <section class="intro">
+        <h2>Welcome to My Portfolio</h2>
+        <p>
+            As a seasoned Senior Systems Engineer based in Leesburg, VA, I specialize in designing and maintaining intricate systems, with a focus on network engineering and software development. My innovative approach ensures systems align seamlessly with evolving technology, creating resilient architectures.
+        </p>
+        <p>
+            With a user-centric mindset, I tailor technical solutions to meet end-users' needs, supported by effective communication and a commitment to continuous improvement. Additionally, my experience as a Data Center Supervisor adds a valuable layer, overseeing operations and implementing best practices for optimal performance and security. This dual expertise positions me to excel in both system engineering intricacies and data center management, contributing to the seamless evolution of technology.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section>
+        <h2>Skills</h2>
+        <ul>
+            <li>System Engineering</li>
+            <li>Storage Virtualization</li>
+            <li>Java</li>
+            <li>Data Analysis</li>
+            <li>Network Security</li>
+            <li>Switches and Routers</li>
+            <li>Project Management</li>
+            <li>Software Development</li>
+            <li>Network+</li>
+            <li>Python</li>
+            <li>Database Management Software</li>
+            <li>CCNA</li>
+            <li>Object-Oriented Programming (OOP)</li>
+            <!-- Additional skills can be added as needed -->
+        </ul>
+    </section>
+
+    <!-- Education Section -->
+    section>
+    <h2>Education</h2>
+    <p>Bachelor of Science in Software Engineering - Washington University of Science And Technology, Expected in 06/2026</p>
+    <p>High School Diploma - Loudoun County High School, 06/2020</p>
+    <!-- Add more education details if applicable -->
+    </section>
+
+    <!-- Work Experience Section -->
+    <section>
+        <h2>Work Experience</h2>
+
+        <div class="job">
+            <h3>Data Center Supervisor</h3>
+            <p><strong>LinkedIn – Sterling, VA</strong> | 01/2024 - Current</p>
+            <ul>
+                <li>Collaborated closely with management teams to plan, develop, and execute technical strategies aligned with the client's vision.</li>
+                <li>Identified and resolved complex issues in computer hardware and network systems, applying effective troubleshooting techniques for remediation.</li>
+                <!-- Add more specific work experience details if applicable -->
+            </ul>
+        </div>
+
+        <div class="job">
+            <h3>Systems Engineer</h3>
+            <p><strong>LinkedIn</strong> | 12/2022 - Current</p>
+            <ul>
+                <li>Spearheaded and directed pivotal strategic initiatives with a primary focus on driving notable improvements in system performance, actively working towards the reduction of downtime, and consistently enhancing the overall user experience.</li>
+                <!-- Add more specific work experience details if applicable -->
+            </ul>
+        </div>
+
+        <!-- Add more job sections if needed -->
+
+    </section>
+
+    <!-- Contact Information Section -->
+    <section>
+        <h2>Contact Information</h2>
+        <ul>
+            <li>Email: david.engineer883@gmail.com</li>
+            <li><a href="https://www.linkedin.com/in/david-ilyas-898393217/" target="_blank">LinkedIn</a></li>
+            <li>
+                <a href="https://github.com/upbimo" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </li>
+        </ul>
+    </section>
+
+</main>
+
+<!-- Footer Styles -->
+<footer class="bg-dark text-white p-3">
+    <div class="container">
+        &copy; 2024 David Ilyas
+        <!-- American flag -->
+        <div class="flag-icon">&#127482;&#127480;</div>
+    </div>
+</footer>
+
+<!-- JavaScript for Last Updated Timestamp -->
+<script>
+    function getCurrentDateTime() {
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', timeZoneName: 'short' };
+        return new Date().toLocaleDateString('en-US', options);
+    }
+
+    document.getElementById('last-updated-time').textContent = getCurrentDateTime();
+</script>
+
+</body>
+</html>
