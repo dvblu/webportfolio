@@ -3,115 +3,90 @@ body {
     font-family: 'Courier New', monospace;
     font-size: 16px;
     line-height: 1.6;
-    background-color: #000000 !important; /* Black background */
-    color: #ffffff !important; /* White text */
+    background-color: #000000;
+    color: #ffffff;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensure the page takes at least the full height of the viewport */
+    min-height: 100vh;
 }
 
 .container {
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px; /* Added padding */
+    padding: 20px;
 }
 
 /* Header Styles */
 header {
-    background-color: #000000; /* Black header */
-    color: #ffffff; /* Header text color */
-    text-align: center;
-    padding: 0.5em 0; /* Adjusted padding */
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: flex-start; /* Align items to the left */
-    background-color: #000000; /* Black navigation bar */
-}
-
-nav ul li {
-    margin: 0;
-    padding: 0.5em 1em;
-}
-
-nav ul li a {
+    background-color: #000000;
     color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1em;
-    transition: color 0.3s ease; /* Smooth transition for color change */
-}
-
-nav ul li a:hover,
-nav ul li a:focus {
-    color: #ffffff; /* Change the color on hover or focus */
+    text-align: center;
+    padding: 4em 0;
 }
 
 /* Main Content Styles */
 main {
-    flex: 1; /* Make the main content expand to fill available space */
+    flex: 1;
     display: flex;
     flex-direction: column;
 }
 
-/* Introduction Section Styles */
-section.intro,
-section {
-    background-color: #000000; /* Black section */
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    padding: 1em;
-    margin: 1em 0; /* Adjusted margins */
-    border: 1px solid #ffffff; /* White border */
+/* Footer Styles */
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 2em 0;
+    width: 100%;
 }
 
-section.intro h2,
-section h2 {
-    color: #ffffff; /* Header text color */
-    border-bottom: 2px solid #ffffff; /* White border under heading */
-    padding-bottom: 0.5em; /* Space between heading and text */
-    margin-bottom: 0.3em; /* Adjusted margin for the heading */
+/* Text Box Styles */
+.textbox {
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+    margin-bottom: 3em;
 }
 
-section.intro p,
-section p {
-    color: #ffffff; /* White text */
-    word-wrap: break-word; /* Allow words to break and wrap onto the next line */
-    margin-bottom: 0.3em; /* Adjusted margin for paragraphs */
+.textbox p {
+    margin-bottom: 0;
 }
 
 /* Skills Section Styles */
-section ul {
-    display: flex;
-    flex-wrap: wrap;
+#skills .textbox {
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+    margin-bottom: 3em;
 }
 
-section li {
-    flex: 0 0 48%; /* 48% width with a little space between items */
-    margin-right: 2%; /* Adjusted space between items */
-    margin-bottom: 0.3em; /* Added margin to the bottom for consistency */
+#skills .textbox .row {
+    margin-left: -15px;
+    margin-right: -15px;
 }
 
-/* Footer Styles */
-footer {
-    background-color: #000000; /* Black footer */
-    color: #ffffff;
-    text-align: center;
-    padding: 1em 0;
-    width: 100%;
-    position: relative; /* Added position property */
+#skills ul {
+    padding-left: 0;
+    margin-left: 0;
 }
 
-.flag-icon {
+#skills ul li {
+    list-style: none;
+    margin-bottom: 1em;
+    position: relative;
+}
+
+#skills ul li::before {
+    content: "\2022";
+    color: #fff;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
     position: absolute;
-    bottom: 10px;
-    right: 10px;
-    color: #ffffff; /* White flag color */
-    font-size: 24px; /* Adjust the font size as needed */
+    left: 0;
 }
