@@ -1,5 +1,9 @@
+function scrollToTop() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+}
+
 document.addEventListener("DOMContentLoaded", function() {
-    const offset = 100; // Adjust this value to offset for fixed headers or other elements
+    const offset = 100;
 
     // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -40,8 +44,4 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     });
-
-    function scrollToTop() {
-        window.scrollTo({top: 0, behavior: 'smooth'});
-    }
 });
